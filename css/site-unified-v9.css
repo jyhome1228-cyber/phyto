@@ -1,0 +1,36 @@
+/* PhytoRevolution global polish V9 / shared layout, brand and media */
+:root{--phyto:#085853;--phyto-deep:#064640;--phyto-text:#18342e;--phyto-muted:#60726c;--phyto-paper:#f6f9f7;--phyto-line:#dfe9e3;--page-width:1200px;--side-pad:clamp(20px,4vw,48px)}
+body{color:var(--phyto-text);background:#fff;font-family:Pretendard,Manrope,sans-serif;line-height:1.72;word-break:keep-all}
+.site-header{height:76px!important;background:var(--phyto)!important}
+.site-header__inner{max-width:calc(var(--page-width) + 2 * var(--side-pad))!important;width:100%;padding:0 var(--side-pad)!important;margin:0 auto}
+.site-header__brand-image{height:44px!important;width:auto!important;max-width:195px!important;object-fit:contain!important}
+.site-header__nav{gap:clamp(20px,2.4vw,36px)!important;font-size:15px!important}.site-header__nav a{font-size:15px!important;font-weight:600}.site-header__contact{padding:9px 17px!important;border-radius:7px!important}
+.site-footer{background:var(--phyto-deep)!important;color:#fff}.site-footer__inner{width:100%;max-width:calc(var(--page-width) + 2 * var(--side-pad))!important;padding:64px var(--side-pad) 56px!important;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr .65fr;gap:40px}.site-footer__brand-image{width:195px!important;max-height:58px;object-fit:contain}.site-footer__bottom{padding:19px var(--side-pad)!important;text-align:center}.site-footer__label{color:#d6e9de}.site-footer__links a:hover{text-decoration:underline;text-underline-offset:4px}
+.section{padding:clamp(76px,7vw,104px) var(--side-pad)!important;min-height:0!important}
+.section-title,.pcai__title,.hht__title{font-size:clamp(30px,2.75vw,41px)!important;line-height:1.3;letter-spacing:-.043em}
+.reveal-title::before{display:none!important}
+.section-desc{font-size:16px!important;line-height:1.85!important}
+.about,.pcai,.hht,.pipeline,.blog,.history-v2{min-height:0!important}
+.about .section-title+.section-desc{margin-top:22px!important}
+.about__right-wrap{position:relative!important;right:auto!important;top:auto!important;bottom:auto!important;transform:none!important;max-width:var(--page-width);margin:26px auto 0!important;display:flex;justify-content:flex-end}
+.about__right-img{width:min(340px,100%)}
+.pcai__timeline{max-width:var(--page-width);margin:auto}.pcai__title,.pcai__sub,.pcai__intro-row,.pcai__flow,.hht__title,.hht__body,.hht__circles,.pipeline__head,.pipeline__caption,.pipeline__expand-title,.pipeline__expand-desc,.pipeline__plants,.pipeline__steps,.blog__head,.blog__carousel,.history-v2>*,.about>*{max-width:var(--page-width);margin-left:auto;margin-right:auto}
+.pcai__flow{margin-top:40px!important}.pcai__sub{font-size:17px!important}
+.pipeline__plants,.pipeline__steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.pipeline__plant,.pipeline-step{border:1px solid var(--phyto-line);border-radius:10px;overflow:hidden;background:#fff}.pipeline__plant-img{aspect-ratio:1.5;overflow:hidden;background:#edf3ee}.pipeline__plant-img img{width:100%;height:100%;object-fit:cover}.pipeline__plant-text{padding:20px}.pipeline__plant-text__inner p{margin:0 0 7px}.pipeline__caption{margin-top:50px}
+.hero{height:clamp(540px,79svh,780px)!important;min-height:540px!important;background:linear-gradient(115deg,#0b423b,#0a2f2b)!important}.hero__slide{object-fit:cover}.hero__shade{background:linear-gradient(90deg,rgba(3,27,22,.65),rgba(3,27,22,.18))!important}.hero__content{padding:32px!important}.hero__tagline{font-size:clamp(17px,2vw,24px)!important}
+.hero__logo{max-width:450px!important;width:min(72vw,450px)!important;height:auto!important}
+.service-band,.products-head,.contact-head,.blog-banner{height:auto!important;min-height:0!important;aspect-ratio:auto!important;padding:48px var(--side-pad) 36px!important;background:#fff!important;border-bottom:1px solid var(--phyto-line);text-align:left!important}
+.service-band::before,.products-head::before,.blog-banner::before,.blog-banner::after{display:none!important}
+.service-band h1,.products-head h1,.contact-head h1,.blog-banner h1{max-width:var(--page-width);width:100%;margin:0 auto 12px!important;font-size:clamp(30px,2.8vw,38px)!important;line-height:1.2!important;letter-spacing:-.045em;color:var(--phyto-text)!important;text-shadow:none!important}
+.service-band p,.products-head p,.contact-head p{max-width:var(--page-width);margin:0 auto!important;font-size:15px!important;color:var(--phyto-muted)!important;text-shadow:none!important}
+.blog-banner img{display:none!important}
+.service-intro,.service-material,.service-steps,.material-section,.contact-body{padding:64px var(--side-pad)!important}
+.service-intro>*,.service-material>*,.service-steps>*,.material-section>*,.contact-body>*{max-width:var(--page-width);margin-left:auto;margin-right:auto}
+.service-intro h2,.service-material h2,.material-section h2{font-size:clamp(26px,2.4vw,34px)!important;line-height:1.33!important;letter-spacing:-.04em}
+.service-intro p,.material-section__body .section-desc{font-size:16px!important;line-height:1.85!important}
+.material-lines__bg{display:none!important}
+.phyto-technology-gallery__head,.phyto-technology-gallery__grid,.pcai-process{max-width:var(--page-width)!important}
+.blog-toolbar,.blog-table,.blog-pagination{width:calc(100% - 2 * var(--side-pad));max-width:var(--page-width)!important;margin-left:auto!important;margin-right:auto!important;padding-left:0!important;padding-right:0!important}
+.blog-row{min-height:68px;grid-template-columns:70px minmax(0,1fr) 130px}.blog-row--head{font-size:13px}.post{width:calc(100% - 2 * var(--side-pad));max-width:840px!important}.post-head h1{font-size:clamp(30px,3vw,42px)!important}.post-body .section-desc{font-size:16px!important;line-height:1.95!important}
+@media(max-width:760px){.site-header{height:68px!important}.site-header__brand-image{height:35px!important;max-width:150px!important}.site-header__nav{background:var(--phyto-deep)!important}.site-header__nav a{font-size:16px!important}.site-footer__inner{grid-template-columns:1fr!important;padding:48px 22px!important}.section{padding:66px 22px!important}.about__right-wrap{display:none}.pcai__timeline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.pipeline__plants,.pipeline__steps{grid-template-columns:1fr}.hero{min-height:510px!important;height:75svh!important}.service-band,.products-head,.contact-head,.blog-banner{padding:36px 22px 30px!important}.service-intro,.service-material,.service-steps,.material-section,.contact-body{padding:54px 22px!important}.blog-toolbar,.blog-table,.blog-pagination,.post{width:calc(100% - 44px)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
