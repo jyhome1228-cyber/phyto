@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blog | PhytoRevolution</title>
+<meta name="description" content="PhytoRevolution의 연구노트, 회사소식, 파트너십 소식을 기록합니다." />
+
+<link rel="stylesheet" as="style" crossorigin
+  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/static/pretendard.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/variables.css" />
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/sub.css" />
+    <link rel="stylesheet" href="css/renewal.css" />
+</head>
+<body data-page="blog">
+
+<div id="site-header"></div>
+
+<main class="sub-main">
+  <section class="blog-banner">
+    <img src="assets/images/blog-banner.webp" alt="" />
+    <h1>Blog</h1>
+  </section>
+
+  <div class="blog-toolbar">
+    <div class="blog-tabs" id="blog-tabs" role="group" aria-label="카테고리">
+      <button type="button" data-cat="전체" class="is-active">전체</button>
+      <button type="button" data-cat="회사소식">회사소식</button>
+      <button type="button" data-cat="파트너십">파트너십</button>
+    </div>
+    <form class="blog-toolbar__search" id="blog-search" role="search">
+      <input type="search" name="q" placeholder="검색어를 입력하세요" aria-label="검색어" />
+      <button type="submit" aria-label="검색">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7.5" /><path d="M20.5 20.5 16.5 16.5" />
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <div class="blog-table">
+    <div class="blog-row blog-row--head">
+      <span>No.</span>
+      <span>Title</span>
+      <span>작성일</span>
+    </div>
+    <div id="blog-rows"></div>
+  </div>
+
+  <nav class="blog-pagination" id="blog-pagination" aria-label="페이지"></nav>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+<script src="js/blog.js"></script>
+</body>
+</html>
