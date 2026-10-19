@@ -1,1 +1,26 @@
-(function(){const p=document.body.dataset.page||'';const l=(url,name,key)=>'<a href="'+url+'"'+(p===key?' class="is-active" aria-current="page"':'')+'>'+name+'</a>';const h='<header class="site-header"><div class="site-header__inner"><a href="index.html" class="site-header__logo" aria-label="홈"><img src="assets/images/logo_1.webp" alt="PhytoRevolution"></a><nav class="site-header__nav" id="primaryNav">'+l('material.html','Material','products')+l('technology.html','Technology','services')+l('blog.html','Blog','blog')+l('contact.html','Contact','contact')+'</nav><button type="button" class="site-header__toggle" aria-expanded="false" aria-controls="primaryNav">메뉴</button></div></header>';const f='<footer class="site-footer"><div class="site-footer__inner"><div><p class="site-footer__company">PhytoRevolution</p><p class="site-footer__contact"><a href="mailto:phytorevolution101@gmail.com">phytorevolution101@gmail.com</a></p><p class="site-footer__address">경기도 고양시 일산동구 백석1동 중앙로 1036</p></div></div><div class="site-footer__bottom">© 2026 PhytoRevolution. All rights reserved.</div></footer>';const a=document.getElementById('site-header'),b=document.getElementById('site-footer');if(a)a.outerHTML=h;if(b)b.outerHTML=f;const btn=document.querySelector('.site-header__toggle'),nav=document.querySelector('.site-header__nav');btn?.addEventListener('click',()=>{let on=nav.classList.toggle('is-open');btn.setAttribute('aria-expanded',String(on))})})();
+(function(){
+  const page=document.body.dataset.page||"";
+  const links=[
+    {href:"index.html",label:"Home",key:"home"},
+    {href:"technology.html",label:"Technology",key:"services"},
+    {href:"material.html",label:"Material",key:"products"},
+    {href:"blog.html",label:"Blog",key:"blog"},
+    {href:"contact.html",label:"Contact",key:"contact"}
+  ];
+  const nav=links.map(item=>'<a href="'+item.href+'"'+(page===item.key?' class="is-active" aria-current="page"':'')+(item.key==="contact"?' class="site-header__contact'+(page==="contact"?' is-active':'')+'"':'')+'>'+item.label+'</a>').join("");
+  const header='<header class="site-header"><div class="site-header__inner">'+
+    '<a href="index.html" class="site-header__logo" aria-label="PhytoRevolution 홈"><span class="site-header__logo-mark" aria-hidden="true">P</span><span class="site-header__logo-text">PHYTO REVOLUTION</span></a>'+
+    '<nav class="site-header__nav" id="primaryNav" aria-label="주요 메뉴">'+nav+'</nav>'+
+    '<button type="button" class="site-header__toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="메뉴 열기">Menu</button>'+
+    '</div></header>';
+  const footer='<footer class="site-footer"><div class="site-footer__inner">'+
+    '<div><p class="site-footer__label">PHYTO REVOLUTION</p><p class="site-footer__company">Plant cells.<br>Better ingredients.<br>Better future.</p><p class="site-footer__desc">한국 자생식물의 가능성을 바이오소재로 확장합니다.</p></div>'+
+    '<div><p class="site-footer__label">Contact</p><p class="site-footer__contact"><a href="mailto:phytorevolution101@gmail.com">phytorevolution101@gmail.com</a></p><p class="site-footer__address">경기도 고양시 일산동구 백석1동 중앙로 1036</p></div>'+
+    '<div><p class="site-footer__label">Explore</p><nav class="site-footer__links" aria-label="푸터 메뉴">'+links.map(x=>'<a href="'+x.href+'">'+x.label+'</a>').join('')+'</nav></div>'+
+    '</div><div class="site-footer__bottom">© 2026 PHYTO REVOLUTION. All rights reserved.</div></footer>';
+  const h=document.getElementById("site-header"),f=document.getElementById("site-footer");
+  if(h)h.outerHTML=header;if(f)f.outerHTML=footer;
+  const toggle=document.querySelector(".site-header__toggle"),menu=document.getElementById("primaryNav");
+  toggle?.addEventListener("click",()=>{const open=menu.classList.toggle("is-open");toggle.setAttribute("aria-expanded",String(open));toggle.setAttribute("aria-label",open?"메뉴 닫기":"메뉴 열기");toggle.textContent=open?"Close":"Menu";});
+  menu?.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{menu.classList.remove("is-open");toggle?.setAttribute("aria-expanded","false")}));
+})();
