@@ -7,7 +7,7 @@
     {href:"blog.html",label:"Blog",key:"blog"},
     {href:"contact.html",label:"Contact",key:"contact"}
   ];
-  const nav=links.map(item=>'<a href="'+item.href+'"'+(page===item.key?' class="is-active" aria-current="page"':'')+(item.key==="contact"?' class="site-header__contact'+(page==="contact"?' is-active':'')+'"':'')+'>'+item.label+'</a>').join("");
+  const nav=links.map(item=>'<a href="'+item.href+'" class="'+[page===item.key?"is-active":"",item.key==="contact"?"site-header__contact":""].filter(Boolean).join(" ")+'"'+(page===item.key?' aria-current="page"':'')+'>'+item.label+'</a>').join("");
   const header='<header class="site-header"><div class="site-header__inner">'+
     '<a href="index.html" class="site-header__logo" aria-label="PhytoRevolution 홈"><span class="site-header__logo-mark" aria-hidden="true">P</span><span class="site-header__logo-text">PHYTO REVOLUTION</span></a>'+
     '<nav class="site-header__nav" id="primaryNav" aria-label="주요 메뉴">'+nav+'</nav>'+
