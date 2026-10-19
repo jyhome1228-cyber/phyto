@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | PhytoRevolution</title>
+    <meta
+      name="description"
+      content="PhytoRevolution 오시는 길과 이메일 문의"
+    />
+
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/static/pretendard.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/sub.css" />
+    <link rel="stylesheet" href="css/renewal.css" />
+  </head>
+  <body data-page="contact">
+    <div id="site-header"></div>
+
+    <main class="sub-main">
+      <header class="contact-head">
+        <h1 class="reveal-title">Contact</h1>
+        <p class="section-desc reveal">
+          PhytoRevolution은 한국 자생식물의 생명력을 식물세포배양 기술로
+          확장하는 K-바이오 딥테크 기업입니다.
+        </p>
+        <p class="contact-head__quote reveal">
+          “나무를 베지 않고, 식물세포의 잠재력을 바이오소재로.”
+        </p>
+        <p class="contact-head__meta reveal">
+          010-1234-1234
+          <span aria-hidden="true">|</span>
+          <a href="mailto:phytorevolution101@gmail.com"
+            >phytorevolution101@gmail.com</a
+          >
+          <span aria-hidden="true">|</span>
+          경기도 고양시 일산동구 백석1동 중앙로 1036
+        </p>
+      </header>
+
+      <section class="contact-body">
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="contact-form__row">
+            <label class="contact-form__field">
+              <span class="contact-form__label">성함</span>
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+            <label class="contact-form__field">
+              <span class="contact-form__label">회사명</span>
+              <input type="text" name="company" autocomplete="organization" />
+            </label>
+          </div>
+          <label class="contact-form__field">
+            <span class="contact-form__label">이메일</span>
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label class="contact-form__field">
+            <span class="contact-form__label">문의 내용</span>
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+
+          <label class="contact-form__consent">
+            <input type="checkbox" name="consent" required />
+            <span>
+              <button
+                type="button"
+                class="contact-form__consent-link"
+                id="privacy-open"
+              >
+                개인정보 수집 및 이용</button
+              >에 동의합니다
+            </span>
+          </label>
+
+          <button type="submit" class="contact-form__submit">
+            문의 보내기
+          </button>
+          <p class="contact-form__status" id="contact-form-status"></p>
+        </form>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <div class="privacy-modal" id="privacy-modal" aria-hidden="true">
+      <div
+        class="privacy-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="privacy-modal-title"
+      >
+        <button
+          type="button"
+          class="privacy-modal__close"
+          id="privacy-close"
+          aria-label="닫기"
+        >
+          ✕
+        </button>
+        <h2 id="privacy-modal-title">개인정보 수집 및 이용 안내</h2>
+        <div class="privacy-modal__body">
+          <p>
+            <strong>1. 수집 항목</strong><br />이름, 회사명, 이메일 주소, 문의
+            내용
+          </p>
+          <p>
+            <strong>2. 수집 및 이용 목적</strong><br />문의 사항 확인 및 답변,
+            파트너십·제휴 관련 연락
+          </p>
+          <p>
+            <strong>3. 보유 및 이용 기간</strong><br />문의 처리 완료 후 1년간
+            보관 후 파기 (단, 관계 법령에 따라 보존이 필요한 경우 해당 기간 동안
+            보관)
+          </p>
+          <p>
+            <strong>4. 동의 거부 권리</strong><br />위 개인정보 수집·이용에 대한
+            동의를 거부할 권리가 있으며, 동의 거부 시 문의 접수가 제한될 수
+            있습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
