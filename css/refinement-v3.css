@@ -42,3 +42,21 @@ html{scroll-padding-top:90px}body{color:var(--phyto-ink);font-family:'Pretendard
 
 /* Additional technology process gallery */
 .phyto-technology-gallery{padding:50px var(--page-gutter) 90px;background:#f5f8f5}.phyto-technology-gallery__head,.phyto-technology-gallery__grid{max-width:var(--page-width);margin:0 auto}.phyto-technology-gallery__head{margin-bottom:30px}.phyto-technology-gallery__head>p:first-child{color:#587663;font:700 12px 'Manrope',sans-serif;letter-spacing:.13em}.phyto-technology-gallery__head h2{font-size:clamp(29px,3.2vw,43px);letter-spacing:-.04em;margin:12px 0}.phyto-technology-gallery__head>p:last-child{font-size:16px;line-height:1.75;color:#52675a}.phyto-technology-gallery__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.phyto-technology-gallery__grid figure{background:white;margin:0}.phyto-technology-gallery__grid img{width:100%;aspect-ratio:1.5;object-fit:cover;display:block}.phyto-technology-gallery__grid figcaption{padding:22px;display:flex;flex-direction:column;gap:8px}.phyto-technology-gallery__grid b{font-size:17px;color:#17372a}.phyto-technology-gallery__grid span{font-size:14px;color:#65766b}@media(max-width:760px){.phyto-technology-gallery{padding:45px 22px 65px}.phyto-technology-gallery__grid{grid-template-columns:1fr}}
+
+/* 2026-10-19 typography harmonization: restrained heading hierarchy */
+:root{--section-space:clamp(78px,7.2vw,112px)}
+.section-title,.reveal-title{font-size:clamp(30px,2.85vw,42px);line-height:1.25;letter-spacing:-.04em}
+.pcai__title,.hht__title{font-size:clamp(32px,3vw,44px)}
+.pcai--renewed .pcai__title{font-size:clamp(36px,3.4vw,50px);line-height:1.14;letter-spacing:-.045em;margin-bottom:20px}
+.pcai-new__headline{font-size:clamp(23px,2.2vw,34px);line-height:1.42}
+.pcai-new__card-body{padding-top:23px}
+.pcai-new__card h3{font-size:clamp(15px,1.28vw,18px);min-height:48px}
+.pcai-new__number{display:none!important}
+.service-band h1,.products-head h1,.contact-head h1{font-size:clamp(36px,3.6vw,52px);line-height:1.18}
+.service-intro h1,.service-intro h2,.service-material h1,.service-material h2,.material-section h1,.material-section h2{font-size:clamp(27px,2.7vw,39px);line-height:1.32}
+.pipeline__expand-title,.material-product__name{font-size:clamp(25px,2.5vw,36px)}
+.blog-banner h1{font-size:clamp(34px,3.5vw,48px)}
+.post-head h1{font-size:clamp(31px,3.4vw,45px)}
+.material-stats__num{font-size:clamp(33px,3vw,42px)}
+.phyto-technology-gallery__head h2{font-size:clamp(27px,2.6vw,38px)}
+@media(max-width:760px){.section-title,.reveal-title{font-size:clamp(29px,7.5vw,35px)}.pcai--renewed .pcai__title{font-size:40px}.pcai-new__headline{font-size:clamp(23px,6vw,29px)}.pcai-new__card h3{min-height:40px;font-size:15px}.service-band h1,.products-head h1,.contact-head h1{font-size:clamp(34px,8vw,42px)}.service-intro h1,.service-intro h2,.service-material h1,.service-material h2,.material-section h1,.material-section h2{font-size:clamp(26px,6.8vw,34px)}}
