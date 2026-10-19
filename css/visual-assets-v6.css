@@ -1,0 +1,15 @@
+/* Supplied PCAI imagery integration */
+.pcai__icon{height:auto;min-height:146px;overflow:hidden;border-radius:9px;background:#f4f8f3}
+.pcai__icon img{display:block;width:100%;height:146px;max-height:none;object-fit:cover}
+.pcai__step-label{margin-top:17px}
+.pcai-process__step{padding:0 0 17px;overflow:hidden;min-height:260px;display:flex;flex-direction:column;justify-content:flex-start}
+.pcai-process__image{width:100%;height:128px;object-fit:cover;display:block;margin:0 0 17px}
+.pcai-process__num,.pcai-process__step strong,.pcai-process__step span:last-child{margin-left:16px;margin-right:16px}
+.pcai-process__step strong{margin-top:10px;font-size:15px}
+.pcai-process__step span:last-child{margin-top:8px}
+.material-product{display:grid;grid-template-columns:1fr 1.25fr;column-gap:40px;align-items:center}
+.material-product__image{grid-column:1;grid-row:1/5;width:100%;aspect-ratio:1.25;object-fit:contain;max-height:360px;border-radius:8px;background:#eef2eb}
+.material-product__tag,.material-product__name,.material-product__desc{grid-column:2}
+.material-product__name{line-height:1.2}
+.pipeline__plant-img img{object-fit:cover}
+@media(max-width:760px){.pcai__icon img{height:132px}.pcai-process__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pcai-process__step{min-height:240px}.pcai-process__image{height:112px}.material-product{display:block}.material-product__image{max-height:280px;margin-bottom:24px}}
