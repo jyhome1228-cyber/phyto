@@ -1,0 +1,9 @@
+/* Official SVG logo lockup. Preserve supplied vector silhouette and #085853 brand identity. */
+:root{--phyto-green:#085853;--phyto-dark:#085853}
+.site-header{background:#085853!important}
+.site-header__logo{display:inline-flex;align-items:center;flex-shrink:0}
+.site-header__brand-image{display:block!important;width:182px!important;height:44px!important;max-width:38vw;object-fit:contain;object-position:left center}
+.site-footer{background:#085853!important}
+.site-footer__brand-image{display:block;width:205px;max-width:100%;height:auto;max-height:58px;object-fit:contain;object-position:left center;margin-bottom:24px}
+.site-footer__company{font-size:18px;line-height:1.5;font-weight:650;letter-spacing:-.025em}
+@media(max-width:760px){.site-header__brand-image{width:150px!important;height:38px!important;max-width:48vw}.site-footer__brand-image{width:185px}}
