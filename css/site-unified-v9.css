@@ -39,3 +39,9 @@ body{color:var(--phyto-text);background:#fff;font-family:Pretendard,Manrope,sans
 .hero{background:#0a4642 url('https://nineworksdatabase.planus253.workers.dev/cdn/uncategorized/20261019-064416-pipe11-852c1223.webp') center 44%/cover no-repeat!important}
 .hero__shade{background:linear-gradient(90deg,rgba(3,45,40,.88),rgba(3,45,40,.5))!important}
 .hero__content{align-items:center!important;justify-content:center!important}
+
+/* Official multicolor symbol + white wordmark, compact global lockup */
+.site-header{background:#074a46!important}
+.site-header__brand-image{display:block!important;width:148px!important;max-width:148px!important;height:38px!important;object-fit:contain!important;object-position:left center}
+.site-footer__brand-image{display:block!important;width:164px!important;max-width:164px!important;height:auto!important;object-fit:contain!important;object-position:left center;margin:0 0 22px}
+@media(max-width:760px){.site-header__brand-image{width:132px!important;max-width:132px!important;height:34px!important}.site-footer__brand-image{width:150px!important;max-width:150px!important}}
