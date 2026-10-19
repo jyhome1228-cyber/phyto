@@ -8,3 +8,37 @@ html{scroll-padding-top:90px}body{color:var(--phyto-ink);font-family:'Pretendard
 @media(max-width:850px){.site-header__inner{padding:0 22px}.site-header__nav{gap:17px}.site-header__logo-text{font-size:14px}.site-footer__inner{grid-template-columns:1.4fr 1fr;gap:36px}.site-footer__inner> :last-child{grid-column:1/-1}}
 @media(max-width:760px){:root{--page-gutter:22px;--section-space:78px}.site-header{height:68px}.site-header__logo-mark{width:29px;height:29px;font-size:18px}.site-header__nav{position:absolute;left:0;right:0;top:100%;display:none;flex-direction:column;align-items:stretch;gap:0;padding:10px 22px 22px;background:#142e25;border-top:1px solid #ffffff30;box-shadow:0 18px 28px #12251a30}.site-header__nav.is-open{display:flex}.site-header__nav a{padding:15px 0;border-bottom:1px solid #ffffff1a}.site-header__nav a.is-active:after{bottom:9px;width:32px;right:auto}.site-header__contact{margin-top:15px;border:1px solid #ffffff70!important;text-align:center}.site-header__toggle{display:block}.site-footer__inner{padding:56px 22px 45px;display:grid;grid-template-columns:1fr;gap:32px}.site-footer__inner> :last-child{grid-column:auto}.site-footer__bottom{padding:18px 22px}.section-title{font-size:36px}.about>.section-desc{padding-right:0}.service-band,.products-head,.contact-head{padding-top:75px;padding-bottom:60px}.blog-toolbar{gap:22px}.material-product{border-radius:9px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+
+/* 2026-10-19 · PCAI solution editorial redesign */
+.pcai.pcai--renewed{background:#f3f6f2;padding-top:clamp(92px,8vw,130px);padding-bottom:clamp(96px,8vw,132px)}
+.pcai--renewed .pcai-new__heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);gap:clamp(36px,7vw,120px);align-items:end;max-width:var(--page-width);margin:0 auto 78px}
+.pcai-new__eyebrow{font:700 12px/1.4 'Manrope',sans-serif;letter-spacing:.15em;color:#577567;margin:0 0 25px}
+.pcai--renewed .pcai__title{font-size:clamp(48px,5vw,74px);line-height:1.08;letter-spacing:-.055em;margin:0 0 26px}
+.pcai-new__headline{font-size:clamp(27px,3vw,43px);font-weight:650;letter-spacing:-.047em;line-height:1.35;margin:0;color:#17362b;word-break:keep-all}
+.pcai-new__detail{max-width:530px}
+.pcai-new__kicker{font:700 clamp(16px,1.35vw,19px)/1.5 'Manrope',sans-serif!important;color:#19392b!important;margin:0 0 18px!important;letter-spacing:-.025em}
+.pcai-new__detail>p:not(.pcai-new__kicker){font-size:16px;line-height:1.85;color:#53675b;margin:0 0 13px;word-break:keep-all}
+.pcai-new__link,.pcai-new__foot>a{display:inline-flex;align-items:center;justify-content:space-between;gap:38px;border-bottom:1px solid #365d48;padding:10px 0 12px;margin-top:18px;font-weight:650;font-size:14px;color:#17392a;text-decoration:none}
+.pcai-new__link:hover,.pcai-new__foot>a:hover{color:#518565}
+.pcai-new__process-head{max-width:var(--page-width);margin:0 auto 18px;display:flex;justify-content:space-between;gap:16px;border-top:1px solid #c7d2c9;padding-top:18px;font:700 11px/1.4 'Manrope',sans-serif;color:#66766b;letter-spacing:.12em}
+.pcai--renewed .pcai-new__grid{max-width:var(--page-width);margin:0 auto;list-style:none;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.pcai-new__card{min-width:0;border:1px solid #dbe4dc;background:#fff;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+.pcai-new__card:hover{transform:translateY(-5px);box-shadow:0 14px 32px rgba(24,50,35,.09)}
+.pcai-new__image{width:100%;aspect-ratio:1.17;overflow:hidden;background:#e7ede7}
+.pcai-new__image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.pcai-new__card:hover .pcai-new__image img{transform:scale(1.05)}
+.pcai-new__card-body{padding:24px 17px 30px}
+.pcai-new__number{display:block;color:#699079;font:700 11px/1.5 'Manrope',sans-serif;letter-spacing:.11em;margin-bottom:20px}
+.pcai-new__card h3{font:750 clamp(16px,1.4vw,19px)/1.3 'Manrope',sans-serif;letter-spacing:-.045em;color:#172e24;min-height:52px;margin:0 0 8px}
+.pcai-new__card strong{display:block;font-size:14px;color:#35664a;margin-bottom:12px;font-weight:650}
+.pcai-new__card p{font-size:13px;line-height:1.8;color:#617068;word-break:keep-all;margin:0}
+.pcai-new__foot{max-width:var(--page-width);margin:30px auto 0;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.pcai-new__foot p{font:500 12px/1.7 'Manrope',sans-serif;letter-spacing:.01em;color:#718279}
+.pcai-new__foot>a{margin:0;white-space:nowrap}
+@media(max-width:1050px){.pcai--renewed .pcai-new__grid{grid-template-columns:repeat(3,minmax(0,1fr))}.pcai-new__card h3{min-height:auto}}
+@media(max-width:760px){.pcai.pcai--renewed{padding-top:76px;padding-bottom:80px}.pcai--renewed .pcai-new__heading{grid-template-columns:1fr;gap:30px;margin-bottom:48px}.pcai--renewed .pcai__title{font-size:50px}.pcai-new__detail>p:not(.pcai-new__kicker){font-size:15px}.pcai--renewed .pcai-new__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.pcai-new__card-body{padding:17px 13px 21px}.pcai-new__card h3{font-size:15px;min-height:42px}.pcai-new__card strong{font-size:12px}.pcai-new__card p{font-size:12px}.pcai-new__process-head{font-size:10px}.pcai-new__foot{display:block}.pcai-new__foot p{margin:0 0 10px}}
+@media(max-width:420px){.pcai--renewed .pcai-new__grid{grid-template-columns:1fr}.pcai-new__image{aspect-ratio:1.7}.pcai-new__card h3{min-height:0}}
+
+/* Additional technology process gallery */
+.phyto-technology-gallery{padding:50px var(--page-gutter) 90px;background:#f5f8f5}.phyto-technology-gallery__head,.phyto-technology-gallery__grid{max-width:var(--page-width);margin:0 auto}.phyto-technology-gallery__head{margin-bottom:30px}.phyto-technology-gallery__head>p:first-child{color:#587663;font:700 12px 'Manrope',sans-serif;letter-spacing:.13em}.phyto-technology-gallery__head h2{font-size:clamp(29px,3.2vw,43px);letter-spacing:-.04em;margin:12px 0}.phyto-technology-gallery__head>p:last-child{font-size:16px;line-height:1.75;color:#52675a}.phyto-technology-gallery__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.phyto-technology-gallery__grid figure{background:white;margin:0}.phyto-technology-gallery__grid img{width:100%;aspect-ratio:1.5;object-fit:cover;display:block}.phyto-technology-gallery__grid figcaption{padding:22px;display:flex;flex-direction:column;gap:8px}.phyto-technology-gallery__grid b{font-size:17px;color:#17372a}.phyto-technology-gallery__grid span{font-size:14px;color:#65766b}@media(max-width:760px){.phyto-technology-gallery{padding:45px 22px 65px}.phyto-technology-gallery__grid{grid-template-columns:1fr}}
